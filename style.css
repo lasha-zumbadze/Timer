@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(249, 172, 28);
+  color: #fff;
+}
+
+.container {
+  display: grid;
+  gap: 8rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 8rem;
+  text-shadow: 0 1px 8px rgb(112, 111, 111);
+}
+
+.timer {
+  font-size: 3rem;
+  display: grid;
+  row-gap: 4rem;
+  font-weight: 600;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form div {
+  width: 16rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  gap: 1.5rem;
+}
+
+form label {
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+}
+
+form input {
+  outline: none;
+  width: 10rem;
+  height: 6rem;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.5);
+  text-align: center;
+  font-size: 4rem;
+  background-color: rgb(244, 223, 185);
+  border: 2px solid #1d1d1d;
+  border-radius: 10px;
+}
+
+form p {
+  font-size: 7rem;
+  margin-top: 4rem;
+  text-shadow: 0 0 8px rgba(0, 0, 0);
+  color: rgb(244, 223, 185);
+}
+
+.btn-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+}
+
+.btn {
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 1rem 3rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: #edecec;
+  color: rgb(255, 166, 1);
+  text-shadow: 0 1px 8px rgb(228, 228, 228);
+  border: 1px solid #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  animation: hovereffect 5s ease-in;
+}
+
+.active {
+  transform: translateY(-8px);
+  background-color: #edecec;
+  color: rgb(255, 166, 1);
+  text-shadow: 0 1px 8px rgb(228, 228, 228);
+  border: 1px solid #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 40em) {
+  .container {
+    row-gap: 2rem;
+  }
+
+  .title {
+    font-size: 8rem;
+  }
+
+  .btn-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    width: 20rem;
+    margin: 0 auto;
+  }
+
+  .timer {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 30em) {
+  .title {
+    font-size: 6rem;
+  }
+
+  .timer {
+    font-size: 3rem;
+  }
+}

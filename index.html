@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="images/icons8-timer-48.png" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Timer</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">TIMER</h1>
+
+      <div class="timer">
+        <form>
+          <div>
+            <label for="minutes">Minutes</label>
+            <input class="minutes" type="number" name="minutes" id="minutes" />
+          </div>
+
+          <p>:</p>
+
+          <div>
+            <label for="seconds">Seconds</label>
+            <input class="seconds" type="number" id="seconds" name="seconds" />
+          </div>
+        </form>
+
+        <div class="btn-container">
+          <div class="btn start">Start</div>
+          <div class="btn stop">Stop</div>
+          <div class="btn reset">Reset</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
