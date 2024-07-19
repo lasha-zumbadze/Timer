@@ -11,3 +11,10 @@ The Timer project is a simple yet versatile countdown timer application built wi
 # Technologies Used
 -  JavaScript: Handles the timer logic and user interactions.
 -  HTML/CSS: Provides the structure and styling of the timer interface.
+
+# Usage
+-  Set Time: Enter the desired countdown time in the input fields.
+-  Start Timer: Click the "Start" button to begin the countdown.
+-  Pause Timer: Click the "Pause" button to pause the countdown.
+-  Reset Timer: Click the "Reset" button to reset the timer to the initial set time.
+-  View Countdown: The remaining time will be displayed in the timer interface.
